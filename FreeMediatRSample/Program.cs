@@ -12,7 +12,7 @@ public static class Program
         var testRequest = new TestRequest { Message = "Ping" };
 
         var testResponse = await mediator.Send(testRequest);
-        Console.Write($"Message sent: {testRequest.Message}, handler responded: {TestResponse.Message}");
+        Console.Write($"Message sent: {testRequest.Message}, handler responded: {testResponse.Message}");
     }
 
     private static IMediator BuildMediator()
